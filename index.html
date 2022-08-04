@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HashTag || Home</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- user-define css || coustom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================== Nav bar ======================== -->
+
+    <nav class="navbar navbar-expand-lg bg-white nav__bar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="img-cover img__logo"><img src="./img/logo.jpg"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ======================== MAIN CONTAINER WITH LEFT SIDE BAR ==================== -->
+
+    <div class="fluid-container main__container">
+        <div class="grid-box">
+            <div class="left__side_short">
+                <div class="left__box">
+                    <div class="blog__category text-center">
+                        <h3>Programming</h3>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item"><a href="">Java</a></li>
+                            <li class="list-group-item"><a href="">Python</a></li>
+                            <li class="list-group-item"><a href="">C Programming</a></li>
+                            <li class="list-group-item"><a href="">C++</a></li>
+                            <li class="list-group-item"><a href="">JavaScript</a></li>
+                            <li class="list-group-item"><a href="">PHP</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blog__category text-center">
+                        <h3>Ethical Hacking</h3>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item"><a href="">The Hacker</a></li>
+                            <li class="list-group-item"><a href="">LiveSecurity</a></li>
+                            <li class="list-group-item"><a href="">Network Scanning</a></li>
+                            <li class="list-group-item"><a href="">Metasploit Framework</a></li>
+                            <li class="list-group-item"><a href="">Termux terminal</a></li>
+                            <li class="list-group-item"><a href="">Nmap || Scanning</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right__side_long">
+                <div class="right__box">
+                    <section class="showcase">
+                        <div class="fluid-container grid side">
+                            <div class="showcase-text">
+                                <img src="img/hashtag-logo.svg">
+                                <h1>Welcome to the HashTag Blog</h1>
+                                <div class="card link-text">https://hashtagblog.com</div>
+                                <a href="#" class="btn btn-outline my-2">Read More</a>
+                            </div>
+                            <div class="showcase-form card p-2">
+                                <img src="https://source.unsplash.com/400x400/?blog" alt="Student_life">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <!-- =====================blog section====================== -->
+
+                <div class="container container__blog ">
+                    <h1 class="text-center py-2">All Blogs</h1>
+                    <div class="blog__grid">
+                        <div class="card card__hover" style="width: 18rem;">
+                            <img src="img/php_img.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Why do we need magic function(__call) in php?</h3>
+                                <p class="card-text">Php is a powerful and widely used open source server side scripting
+                                    language it help to genrate dynamically web-page...</p>
+                                <button class="btn btn-warning"><a href="">Read More</a></button>
+                            </div>
+                        </div>
+
+                        <div class="card card__hover" style="width: 18rem;">
+                            <img src="img/linux.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Linux for Beginners || basic linux commands </h3>
+                                <p class="card-text">If you are looking for a best operating system which is better than
+                                    windows then linux is the best because if your pc works on low-end ...</p>
+                                <button class="btn btn-warning"><a href="">Read More</a></button>
+                            </div>
+                        </div>
+
+                        <div class="card card__hover" style="width: 18rem;">
+                            <img src="img/java.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>AWT versus Swing || Swing is best ?</h3>
+                                <p class="card-text">java is a general-purpose , object - oriented programming language
+                                    developed by sun microsystems of USA in 1991. java totaly work on WORA ...</p>
+                                <button class="btn btn-warning"><a href="">Read More</a></button>
+                            </div>
+                        </div>
+
+                        <div class="card card__hover" style="width: 18rem;">
+                            <img src="img/java_terminal.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>configuration and running of java program using terminal</h3>
+                                <p class="card-text">java is a general-purpose , object - oriented programming language
+                                    developed by sun microsystems of USA in 1991. java totaly work on WORA ...</p>
+                                <button class="btn btn-warning"><a href="">Read More</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="footer__socials">
+            <a href="https://youtube.com" target="_blank">
+                <i class="uil uil-youtube"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="uil uil-twitter"></i>
+            </a>
+        </div>
+
+        <div class="container container__footer">
+            
+            <div class="card__box">
+                <h3 class="py-2">Navigation</h3>
+                <ul class="list-group list-group-flush" >
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="card__box">
+                <h3 class="py-2">Categories</h3>
+                <ul>
+                    <li><a href="">Tech</a></li>
+                    <li><a href="">Programming</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Network and security</a></li>
+                    <li><a href="">Science $ Technology</a></li>
+                    <li><a href="">Food</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright © 2021 Hashtag Systems Inc. All Rights Reserved</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
