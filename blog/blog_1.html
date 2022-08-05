@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HashTag || Home</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- user-define css || coustom css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================== Nav bar ======================== -->
+
+    <nav class="navbar navbar-expand-lg bg-white nav__bar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <div class="img-cover img__logo"><img src="/img/logo.jpg"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!--==================================== blog content=========================== -->
+
+
+    <div class="fluid-container container__blog_box">
+        <div class="frame service__banner">
+            <div class="grid data__box">
+                <h5>Blog > Why do we need magic function(__call()) in php?</h5>
+                <h5>Blogging is a perfect way to share your thoughts and ideas with others.</h5>
+            </div>
+            <div class="blog-data grid-box2">
+                <div class="blog__right blog__information">
+                    <h2 class="topic">Why do we need magic function(__call()) in php?</h2>
+                    <span> <i class="uil uil-calendar-alt"></i>05 AUG 2022 </span> <span> <i
+                            class="uil uil-files-landscapes-alt"></i>Developer</span>
+
+                    <div class="card box">
+                        <img src="/img/php_img.jpg">
+                    </div>
+                    <div class="information">
+                        <p>
+                            Php stands for <b>Hypertext preprocessor</b>. Php is a powerful and widely-used open source
+                            service
+                            -side programming language to write dynamically generated web-page. php is executed on
+                            service and the result is sent to the client browser as a plain html.php is helpful for the
+                            Beginners web-Developer purpose . It helps to easily understand the mechanism of server side
+                            scripting language working.
+                            Php is an “HTML -embedded scripting language primarily used for dynamic web
+                            application”.Most of the php syntax is similar to the c,java,perl programming language . It
+                            is an open source language and runs most of the operating system and most web-servers.php
+                            perform system function i.e from file on system it can create ,open, read,write and close
+                            them all function used in php.
+                        </p>
+
+                        <h4>Introduction</h4>
+                        <p>Magic methods in PHP are special methods that are help to perform certan task. These methods
+                            are named with double underscore (__) as stating. All these function names are reserved and
+                            can't be used for any purpose other than associated magical functionality. Magical method in
+                            a class must be declared public. These methods act as interceptors that are automatically
+                            called when certain conditions are met.</p><br><br>
+
+                        <p>In php function overloading is dine wiyh the help of magic function <b>__call()</b> .this
+                            function take the function name and arguments below is the example of it.</p>
+
+                        <div class="card box">
+                            <img src="/img/php-magic-methods-overviews.jpg">
+                            <span class="text-center">Magic methods</span>
+                        </div>
+                        <div class="card box">
+                            <img src="/img/pro_1.png">
+                            <span class="text-center">Fatal error :- cannot redeclare text ::fun</span>
+                        </div>
+
+
+                        <p class="py-2"><b>NOTE:-</b> from the example you can say that php overloading with same name
+                            function can't be possible .with the help of magic function overloding is done.</p>
+
+                        <h4>Property Overloading example:-</h4>
+                        <div class="card box">
+                            <img src="/img/property_over.png">
+                            <span class="text-center">Property Overloading</span>
+                        </div>
+
+                        <h4>Method Overloading example:-</h4>
+                        <div class="card box">
+                            <img src="/img/function_over.png">
+                            <span class="text-center">Method Overloading</span>
+                        </div>
+
+
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>__set()</td>
+                                    <td>triggered while initializing overloaded</td>
+                                </tr>
+                                <tr>
+                                    <td>__get()</td>
+                                    <td>triggered while using overloaded Property with PHP print statements.</td>
+                                </tr>
+                                <tr>
+                                    <td>__isset()</td>
+                                    <td>invoked when we check overloaded properties with isset() function</td>
+                                </tr>
+                                <tr>
+                                    <td>__unset()</td>
+                                    <td>invoked on using PHP unset for overloaded properties</td>
+                                </tr>
+                                <tr>
+                                    <td>__call()</td>
+                                    <td>triggered while invoking overloaded methods in static context.</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="blog__left">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
