@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a:hover{
+    color: #f56404da;
+}
+
 .topic {
     text-transform: uppercase;
     padding: 0 3rem;
@@ -351,6 +355,8 @@ span {
         align-items: center;
         gap: 1rem;
     }
+
+    
 
     .showcase::before,
     .showcase::after {
